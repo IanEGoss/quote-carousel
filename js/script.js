@@ -28,7 +28,7 @@ const data = [
   {
     quote: `“It's fine.”`,
     emoji: '🫀',
-    image: `url(assets/bodies_of_water-1024x682.jpg)`🫀
+    image: `url(assets/bodies_of_water-1024x682.jpg)`
   }
 ];
 
