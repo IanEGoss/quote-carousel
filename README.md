@@ -11,3 +11,4 @@
 
 ## Citations
 - Your citations and sources go here
+- favicon
