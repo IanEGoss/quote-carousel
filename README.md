@@ -12,3 +12,4 @@
 ## Citations
 - Your citations and sources go here
 - favicon
+- font (https://www.fontshare.com/fonts/neco)

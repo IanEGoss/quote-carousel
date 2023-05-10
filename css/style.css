@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 body {  
+  /*neco font*/
+  font-family: 'Neco-Regular';
   /* Horizontal and Vertical Center */
   display: flex;
   justify-content: center;
