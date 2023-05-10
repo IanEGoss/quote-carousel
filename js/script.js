@@ -22,8 +22,13 @@ const data = [
   },
   {
     quote: `“Get Dunked On.”`,
-    emoji: '👌',
+    emoji: '👻',
     image: `url(assets/cropped-Torrential-Rain-Flooding-and-Climate-Change.jpg)`
+  },
+  {
+    quote: `“It's fine.”`,
+    emoji: '🫀',
+    image: `url(assets/bodies_of_water-1024x682.jpg)`🫀
   }
 ];
 
