@@ -19,6 +19,11 @@ const data = [
     quote: `“We'll be ok now.”`, 
     emoji: '👌', 
     image: `url(assets/forest.jpg)`
+  },
+  {
+    quote: `“Get Dunked On.”`,
+    emoji: '👌',
+    image: `url(assets/cropped-Torrential-Rain-Flooding-and-Climate-Change.jpg)`
   }
 ];
 
