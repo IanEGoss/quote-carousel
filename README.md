@@ -11,5 +11,5 @@
 
 ## Citations
 - Your citations and sources go here
-- favicon
+- favicon (https://www.fontshare.com/fonts/neco)
 - font (https://www.fontshare.com/fonts/neco)
