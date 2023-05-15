@@ -18,7 +18,7 @@ const data = [
   {
     quote: `It's fine, for now.”`,
     emoji: '👌',
-    image: `url(C:\Users\gossi\Desktop\quote-carousel\assets\istockphoto-1280015859-612x612.jpg)`
+    image: `url(assets\istockphoto-1280015859-612x612.jpg)`
   },
   {
     quote: `“Get Dunked On.”`,
