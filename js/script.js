@@ -1,24 +1,24 @@
 /* Data to Show*/
 const data = [
   {
-   quote: `“Be like a mountain.”`, 
-   emoji: '🗻', 
-   image: `url(assets/mountain.jpg)`
-  }, 
-  {
-   quote: `“Brave the oceans.”`, 
-   emoji: '🌊', 
-   image: `url(assets/ocean.jpg)`
-  },  
-  {
-   quote: `“Grow like a tree.”`, 
-   emoji: '🌲' , 
-   image: `url(assets/tree.jpg)`
+    quote: `“SHHHH!.”`,
+    emoji: '👻',
+    image: `url(assets\OKmyths-Lake-Hefner.jpg)`
   },
   {
-    quote: `“We'll be ok now.”`, 
-    emoji: '👌', 
-    image: `url(assets/forest.jpg)`
+    quote: `“Get swept by the oceans.”`,
+    emoji: '🌊',
+    image: `url(assets\download-1.jpg)`
+  },
+  {
+    quote: `“Get lost.”`,
+    emoji: '🌊',
+    image: `url(assets\images.jpg)`
+  },
+  {
+    quote: `It's fine, for now.”`,
+    emoji: '👌',
+    image: `url(C:\Users\gossi\Desktop\quote-carousel\assets\istockphoto-1280015859-612x612.jpg)`
   },
   {
     quote: `“Get Dunked On.”`,
@@ -47,7 +47,7 @@ quote.innerHTML = "Colin is quotable.";
 // Check-Check: change emoji text
 emoji.innerHTML = "👍️";
 // Check-Check: background image
-bgImage.style.backgroundImage= 'url(/assets/mountain.jpg)';
+bgImage.style.backgroundImage = 'url(/assets/mountain.jpg)';
 
 /*
  * Navigate to Items with Event Listeners
@@ -66,9 +66,9 @@ const randButton = document.querySelector("img.random");
 nextButton.addEventListener("click", () => {
   // update, then increase item number with each click
   itemNumber = itemNumber + 1;
-  
+
   // if at LAST item
-  if ( itemNumber > data.length -1 ) {
+  if (itemNumber > data.length - 1) {
     // reset counting to first item
     itemNumber = 0;
   }
@@ -77,20 +77,20 @@ nextButton.addEventListener("click", () => {
   quote.innerHTML = data[itemNumber].quote;
   emoji.innerHTML = data[itemNumber].emoji;
   bgImage.style.backgroundImage = data[itemNumber].image;
-  
+
 });
-  
+
 // listen for clicks on previous button
 prevButton.addEventListener("click", () => {
   // update, then DEcrease item number with each click
   itemNumber = itemNumber - 1;
-  
+
   // if at FIRST item
-  if ( itemNumber < 0 ) {
+  if (itemNumber < 0) {
     // reset counting to last item
-    itemNumber = data.length -1;
-  }  
-  
+    itemNumber = data.length - 1;
+  }
+
   // display data based on array index
   quote.innerHTML = data[itemNumber].quote;
   emoji.innerHTML = data[itemNumber].emoji;
@@ -99,71 +99,71 @@ prevButton.addEventListener("click", () => {
 
 // listen for clicks on random button
 randButton.addEventListener('click', () => {
-  
+
   // generate random number, for total number, of items (data)
-  randomNumber = Math.floor ( Math.random() * data.length );
-  
+  randomNumber = Math.floor(Math.random() * data.length);
+
   // display data based random number
   quote.innerHTML = data[randomNumber].quote;
   emoji.innerHTML = data[randomNumber].emoji;
   bgImage.style.backgroundImage = data[randomNumber].image;
-  
+
 });
 
 // listen for keypress next
 document.addEventListener('keyup', (event) => {
-  
+
   // check-check: What key was pressed?
   // console.log(event);
 
   // Next Right Arrow  
-  if ( event.key === "ArrowRight" ) {
-   
-   // update, then increase item number with each click
-  itemNumber = itemNumber + 1;
-  
-  // if at LAST item
-  if ( itemNumber > data.length -1 ) {
-    // reset counting to first item
-    itemNumber = 0;
+  if (event.key === "ArrowRight") {
+
+    // update, then increase item number with each click
+    itemNumber = itemNumber + 1;
+
+    // if at LAST item
+    if (itemNumber > data.length - 1) {
+      // reset counting to first item
+      itemNumber = 0;
+    }
+
+    // display data based on array index
+    quote.innerHTML = data[itemNumber].quote;
+    emoji.innerHTML = data[itemNumber].emoji;
+    bgImage.style.backgroundImage = data[itemNumber].image;
+
   }
 
-  // display data based on array index
-  quote.innerHTML = data[itemNumber].quote;
-  emoji.innerHTML = data[itemNumber].emoji;
-  bgImage.style.backgroundImage = data[itemNumber].image;
-    
-  }
-  
   // Prev Left Arrow
-  if ( event.key === "ArrowLeft" ) {
-  
-   // update, then DEcrease item number with each click
-  itemNumber = itemNumber - 1;
-  
-  // if at FIRST item
-  if ( itemNumber < 0 ) {
-    // reset counting to last item
-    itemNumber = data.length -1;
-  }  
-  
-  // display data based on array index
-  quote.innerHTML = data[itemNumber].quote;
-  emoji.innerHTML = data[itemNumber].emoji;
-  bgImage.style.backgroundImage = data[itemNumber].image;
+  if (event.key === "ArrowLeft") {
+
+    // update, then DEcrease item number with each click
+    itemNumber = itemNumber - 1;
+
+    // if at FIRST item
+    if (itemNumber < 0) {
+      // reset counting to last item
+      itemNumber = data.length - 1;
+    }
+
+    // display data based on array index
+    quote.innerHTML = data[itemNumber].quote;
+    emoji.innerHTML = data[itemNumber].emoji;
+    bgImage.style.backgroundImage = data[itemNumber].image;
   }
-  
+
   // Random Spacebar
-  if ( event.key === " ") {
-    
+  if (event.key === " ") {
+
     // generate random number, for total number, of items (data)
-    randomNumber = Math.floor ( Math.random() * data.length );
+    randomNumber = Math.floor(Math.random() * data.length);
 
     // display data based random number
     quote.innerHTML = data[randomNumber].quote;
     emoji.innerHTML = data[randomNumber].emoji;
     bgImage.style.backgroundImage = data[randomNumber].image;
-  
+
   }
-  
+
 });
